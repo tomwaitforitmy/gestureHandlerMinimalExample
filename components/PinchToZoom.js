@@ -21,7 +21,6 @@ export const PinchToZoom = () => {
   const pan = Gesture.Pan().onChange(({ translationX, translationY }) => {
     translateX.value = translationX;
     translateY.value = translationY;
-    console.log("pan");
   });
   const pinch = Gesture.Pinch().onChange((event) => {
     scale.value = event.scale;

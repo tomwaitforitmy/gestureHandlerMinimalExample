@@ -1,12 +1,13 @@
 import "react-native-gesture-handler";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet } from "react-native";
 import { PinchToZoom } from "./components/PinchToZoom";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <GestureHandlerRootView style={styles.container}>
       <PinchToZoom></PinchToZoom>
-    </View>
+    </GestureHandlerRootView>
   );
 }
 
